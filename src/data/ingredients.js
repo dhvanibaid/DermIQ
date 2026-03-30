@@ -1,0 +1,183 @@
+export const INGREDIENT_DB = {
+  recommended: {
+    oily: ['Niacinamide', 'Salicylic Acid', 'Zinc PCA', 'Azelaic Acid', 'Green Tea Extract', 'Clay (Kaolin)'],
+    dry: ['Hyaluronic Acid', 'Ceramides', 'Glycerin', 'Squalane', 'Panthenol', 'Shea Butter'],
+    combination: ['Niacinamide', 'Hyaluronic Acid', 'Lactic Acid', 'Ceramides', 'Centella Asiatica', 'Panthenol'],
+    sensitive: ['Centella Asiatica', 'Aloe Vera', 'Ceramides', 'Panthenol', 'Allantoin', 'Oat Extract'],
+    normal: ['Vitamin C', 'Niacinamide', 'Hyaluronic Acid', 'Peptides', 'Squalane', 'AHA Blend'],
+  },
+  avoid: {
+    oily: ['Coconut Oil', 'Lanolin', 'Heavy Mineral Oil', 'Isopropyl Myristate'],
+    dry: ['Alcohol Denat', 'Strong AHAs', 'Astringents'],
+    combination: ['Overly Stripping Cleansers', 'Heavy Oils'],
+    sensitive: ['Fragrance/Parfum', 'Alcohol Denat', 'Essential Oils', 'Strong Retinoids', 'SLS/SLES'],
+    normal: ['Alcohol Denat in excess', 'Fragrance (sensitive areas)'],
+  },
+}
+
+export const INGREDIENT_DETAILS = {
+  'Niacinamide': {
+    score: 9.2,
+    safety: 'Very Safe',
+    color: 'green',
+    benefit: 'Helps reduce visible pores, balance oil, brighten dullness, and support the skin barrier.',
+    tags: ['Pore Care', 'Oil Control', 'Brightening'],
+    bars: { efficacy: 88, tolerance: 94, value: 91 },
+  },
+  'Hyaluronic Acid': {
+    score: 9.5,
+    safety: 'Very Safe',
+    color: 'blue',
+    benefit: 'Draws water into the skin for hydration and a plumper appearance without feeling heavy.',
+    tags: ['Hydration', 'Plumping', 'Gentle'],
+    bars: { efficacy: 92, tolerance: 98, value: 90 },
+  },
+  'Ceramides': {
+    score: 9.3,
+    safety: 'Very Safe',
+    color: 'blue',
+    benefit: 'Strengthens the skin barrier and reduces moisture loss, especially helpful for dry or sensitive skin.',
+    tags: ['Barrier', 'Repair', 'Moisture'],
+    bars: { efficacy: 89, tolerance: 97, value: 86 },
+  },
+  'Salicylic Acid': {
+    score: 8.7,
+    safety: 'Safe',
+    color: 'green',
+    benefit: 'Penetrates into pores to dissolve excess oil and help with acne, blackheads, and congestion.',
+    tags: ['Acne', 'Exfoliant', 'Pores'],
+    bars: { efficacy: 86, tolerance: 79, value: 87 },
+  },
+  'Azelaic Acid': {
+    score: 8.8,
+    safety: 'Very Safe',
+    color: 'green',
+    benefit: 'Targets acne, post-acne marks, and redness with lower irritation than many actives.',
+    tags: ['Acne', 'Pigmentation', 'Redness'],
+    bars: { efficacy: 85, tolerance: 90, value: 86 },
+  },
+  'Centella Asiatica': {
+    score: 9.1,
+    safety: 'Very Safe',
+    color: 'green',
+    benefit: 'Calms irritation, reduces redness, and supports recovery for reactive or compromised skin.',
+    tags: ['Soothing', 'Barrier', 'Sensitive Skin'],
+    bars: { efficacy: 84, tolerance: 97, value: 88 },
+  },
+  'Panthenol': {
+    score: 8.9,
+    safety: 'Very Safe',
+    color: 'blue',
+    benefit: 'Supports hydration and barrier comfort while helping skin feel softer and less irritated.',
+    tags: ['Moisture', 'Repair', 'Gentle'],
+    bars: { efficacy: 83, tolerance: 97, value: 90 },
+  },
+  'Vitamin C': {
+    score: 8.6,
+    safety: 'Safe',
+    color: 'green',
+    benefit: 'Brightens uneven tone and gives antioxidant support against environmental stress.',
+    tags: ['Brightening', 'Glow', 'Antioxidant'],
+    bars: { efficacy: 87, tolerance: 74, value: 81 },
+  },
+  'Peptides': {
+    score: 8.5,
+    safety: 'Very Safe',
+    color: 'blue',
+    benefit: 'Supports firmness and smoother-looking skin over time with a gentle profile.',
+    tags: ['Firming', 'Anti-aging', 'Gentle'],
+    bars: { efficacy: 82, tolerance: 95, value: 78 },
+  },
+  'Squalane': {
+    score: 8.9,
+    safety: 'Very Safe',
+    color: 'blue',
+    benefit: 'A lightweight emollient that locks in moisture and improves softness without heaviness.',
+    tags: ['Moisture', 'Barrier', 'Softness'],
+    bars: { efficacy: 84, tolerance: 96, value: 85 },
+  },
+  'Lactic Acid': {
+    score: 8.2,
+    safety: 'Moderate',
+    color: 'amber',
+    benefit: 'A gentler exfoliating acid that helps texture and dullness while offering some hydration.',
+    tags: ['Exfoliation', 'Glow', 'Texture'],
+    bars: { efficacy: 81, tolerance: 72, value: 80 },
+  },
+  'Aloe Vera': {
+    score: 8.7,
+    safety: 'Very Safe',
+    color: 'blue',
+    benefit: 'Comforting and cooling ingredient that helps reduce the feeling of irritation.',
+    tags: ['Soothing', 'Cooling', 'Comfort'],
+    bars: { efficacy: 77, tolerance: 97, value: 88 },
+  },
+}
+
+export const AVOID_DETAILS = {
+  'Fragrance/Parfum': {
+    risk: 'High',
+    reason: 'Common trigger for irritation and sensitization, especially for reactive skin.',
+    warning: 'Best avoided if your skin stings, flushes, or reacts easily.',
+  },
+  'Alcohol Denat': {
+    risk: 'High',
+    reason: 'Can feel drying and may disrupt the barrier when overused.',
+    warning: 'Frequent use may worsen dehydration and sensitivity.',
+  },
+  'Essential Oils': {
+    risk: 'Moderate',
+    reason: 'Fragrant plant extracts can still be irritating on sensitive or compromised skin.',
+    warning: 'Patch test carefully if your skin is reactive.',
+  },
+  'Strong Retinoids': {
+    risk: 'High',
+    reason: 'Very effective but often too intense for beginners or highly sensitive skin.',
+    warning: 'Start with gentler retinoids or bakuchiol if new to actives.',
+  },
+  'SLS/SLES': {
+    risk: 'Moderate',
+    reason: 'Harsh cleansing agents may leave the skin feeling tight and stripped.',
+    warning: 'Prefer low-foam or sulfate-free cleansers if barrier is weak.',
+  },
+  'Coconut Oil': {
+    risk: 'Moderate',
+    reason: 'Can feel too occlusive and may clog pores for some oily or acne-prone users.',
+    warning: 'Not ideal if you break out easily.',
+  },
+  'Lanolin': {
+    risk: 'Moderate',
+    reason: 'Rich texture can feel heavy and may trigger congestion for some users.',
+    warning: 'Use cautiously for acne-prone skin.',
+  },
+  'Heavy Mineral Oil': {
+    risk: 'Low',
+    reason: 'May feel greasy for oily skin even though it is usually barrier-friendly.',
+    warning: 'Texture preference matters more than safety here.',
+  },
+  'Isopropyl Myristate': {
+    risk: 'High',
+    reason: 'Frequently flagged as comedogenic in acne-prone routines.',
+    warning: 'Often worth avoiding for oily skin.',
+  },
+  'Strong AHAs': {
+    risk: 'High',
+    reason: 'Can over-exfoliate dry or sensitive skin and worsen irritation.',
+    warning: 'Use gentle exfoliants and lower frequencies instead.',
+  },
+  'Astringents': {
+    risk: 'Moderate',
+    reason: 'Can create a tight, dry feeling that weakens comfort and hydration.',
+    warning: 'Barrier-focused toners are a better fit.',
+  },
+  'Overly Stripping Cleansers': {
+    risk: 'Moderate',
+    reason: 'Can push combination skin into both dryness and rebound oiliness.',
+    warning: 'Choose balanced, low-stripping cleansers.',
+  },
+  'Heavy Oils': {
+    risk: 'Moderate',
+    reason: 'Sometimes too rich for the oily areas of combination skin.',
+    warning: 'Look for lightweight emulsions or gel creams.',
+  },
+}
